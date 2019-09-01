@@ -16,6 +16,7 @@ The algorithm terminates when the DFS visit does not reache the leaves of the gr
 d) Visualise the graph nodes. 
 
 
-ESECUTION TIME
+EXECUTION TIME
 
-
+The algorithm to find the maximum flux is approximately linear with the input (number of nodes/houses). After all, the execution time depends on the DFS visit of the "optimal" graph, i.e. the graph where each house has only one connection coming in and another one coming out. The complexity of the algorithm is O(V+E), where V is the n° of vertices/nodes and E is the n° of arcs of the optimal graph (equal to the number of vertices).
+The algorithm to find the minimum/optimal web is necessarily slower: kruskal has complexity O(E log(V)), where E is now of order V^2 (kruskal works on the original graph, which is fully connected) - so overall the complexity is O(n^2 log(n)).
